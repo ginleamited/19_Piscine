@@ -6,7 +6,7 @@
 /*   By: jilin <jilin@student.s19.be>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/24 00:54:06 by jilin             #+#    #+#             */
-/*   Updated: 2024/07/24 01:02:59 by jilin            ###   ########.fr       */
+/*   Updated: 2024/07/25 19:55:36 by jilin            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ int	ft_strlen(char *str)
 	i = 0;
 	while (str[i])
 		i++;
-	return (0);
+	return (i);
 }
 
 char	*ft_strcpy(char *dest, char *src)
