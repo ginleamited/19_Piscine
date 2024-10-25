@@ -6,7 +6,7 @@
 /*   By: jilin <jilin@student.s19.be>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/20 17:53:22 by jilin             #+#    #+#             */
-/*   Updated: 2024/07/20 17:53:24 by jilin            ###   ########.fr       */
+/*   Updated: 2024/10/25 17:19:24 by jilin            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,6 +31,12 @@ void	ft_putnbr(int nb)
 		ft_putnbr(div / 10);
 	nb = div % 10;
 	ft_putchar(nb + 48);
+	// in recursion, the function keeps calling 
+	// itself until it reaches a base case 
+	// (a condition where it stops further recursive calls). 
+	// After reaching the base case, the function starts "returning" 
+	// from those recursive calls in reverse order, printing each 
+	// digit as it comes back up.
 }
 /*
 int	main(void)

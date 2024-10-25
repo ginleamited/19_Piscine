@@ -6,11 +6,12 @@
 /*   By: jilin <jilin@student.s19.be>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/22 20:57:55 by jilin             #+#    #+#             */
-/*   Updated: 2024/07/23 16:01:41 by jilin            ###   ########.fr       */
+/*   Updated: 2024/10/25 17:28:28 by jilin            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdlib.h>
+// lib malloc
 
 int	ft_ultimate_range(int **range, int min, int max)
 {

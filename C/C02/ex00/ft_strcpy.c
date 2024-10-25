@@ -6,7 +6,7 @@
 /*   By: jilin <jilin@student.s19.be>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/08 20:49:32 by jilin             #+#    #+#             */
-/*   Updated: 2024/07/09 16:46:56 by jilin            ###   ########.fr       */
+/*   Updated: 2024/10/25 17:16:00 by jilin            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,6 +21,7 @@ char	*ft_strcpy(char *dest, char *src)
 		i++;
 	}
 	dest[i] = '\0';
+	// '\0' a mettre pour terminer le string avec un NULL terminator
 	return (dest);
 }
 /*

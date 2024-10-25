@@ -6,7 +6,7 @@
 /*   By: jilin <jilin@student.s19.be>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/08 20:52:15 by jilin             #+#    #+#             */
-/*   Updated: 2024/07/21 16:57:26 by jilin            ###   ########.fr       */
+/*   Updated: 2024/10/25 17:15:25 by jilin            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,6 +31,8 @@ char	*ft_strcapitalize(char *str)
 
 	i = 0;
 	capflag = 1;
+	// means that the very first character of the string 
+	// (if it is an alphabetic character) should be capitalized.
 	ft_strlowcase(str);
 	while (str[i])
 	{
@@ -39,15 +41,31 @@ char	*ft_strcapitalize(char *str)
 			if (capflag == 1)
 				str[i] -= 32;
 			capflag = 0;
+			// sets to 0 because after capitalizing (or encountering 
+			// a lowercase letter), the subsequent characters in the 
+			// current word should remain lowercase until a new word starts.
 		}
 		else if (str[i] >= '0' && str[i] <= '9')
 			capflag = 0;
+			// If the character is a digit:
+			// Sets to 0 because digits do not signify the start of a new word.
 		else
 			capflag = 1;
+			// If the character is any other character (like a space, punctuation, etc.):
+			// Sets to 1, indicating that the next alphabetic character should 
+			// be capitalized. This is because such characters usually separate words.
 		i++;
 	}
 	return (str);
 }
+// capflag acts as a flag to control whether the next alphabetic 
+// character should be capitalized.It is set to 1 at the 
+// start and after any non-alphanumeric character 
+// (indicating a new word should start).
+
+// sets to 0 because after capitalizing (or encountering 
+// a lowercase letter), the subsequent characters in the 
+// current word should remain lowercase until a new word starts.
 /*
 #include <stdio.h>
 

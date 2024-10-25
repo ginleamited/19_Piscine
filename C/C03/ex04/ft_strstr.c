@@ -6,12 +6,13 @@
 /*   By: jilin <jilin@student.s19.be>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/10 12:40:10 by jilin             #+#    #+#             */
-/*   Updated: 2024/07/10 15:55:08 by jilin            ###   ########.fr       */
+/*   Updated: 2024/10/25 17:25:15 by jilin            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 char	*(ft_strstr(char *str, char *to_find))
-
+// locates the first occurrence of the null-terminated 
+// string needle in the null-terminated string haystack
 {
 	int	i;
 	int	j;

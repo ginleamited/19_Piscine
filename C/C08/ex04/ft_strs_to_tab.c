@@ -6,7 +6,7 @@
 /*   By: jilin <jilin@student.s19.be>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/24 00:54:06 by jilin             #+#    #+#             */
-/*   Updated: 2024/07/25 19:55:36 by jilin            ###   ########.fr       */
+/*   Updated: 2024/10/25 17:36:13 by jilin            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -51,6 +51,7 @@ char	*ft_strdup(char *src)
 }
 
 struct s_stock_str	*ft_strs_to_tab(int ac, char **av)
+// il vient du fichier .h
 {
 	int					i;
 	t_stock_str	*array;
@@ -62,11 +63,17 @@ struct s_stock_str	*ft_strs_to_tab(int ac, char **av)
 	while (i < ac)
 	{
 		array[i].size = ft_strlen(av[i]);
+		// Stocke la longueur de la chaîne.
 		array[i].str = av[i];
+		// Stocke le pointeur vers la chaîne originale.
 		array[i].copy = ft_strdup(av[i]);
+		// Crée et stocke une copie de la chaîne.
 		i++;
 	}
 	array[i].str = 0;
+	// marquer la fin du tableau
 	array[i].copy = 0;
+	// marquer la fin du tableau
 	return (array);
+	// retourner le tableau
 }

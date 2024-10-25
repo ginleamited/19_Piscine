@@ -6,7 +6,7 @@
 /*   By: jilin <jilin@student.s19.be>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/11 20:07:01 by jilin             #+#    #+#             */
-/*   Updated: 2024/07/22 13:09:18 by jilin            ###   ########.fr       */
+/*   Updated: 2024/10/25 17:26:27 by jilin            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -54,11 +54,14 @@ int	main(int ac, char **av)
 {
 	int	i;
 	int	check;
+	// Outer loop for bubble sort
 
 	check = 1;
+	// Start from 1 to skip the program name
 	while (check < ac - 1)
 	{
 		i = 1;
+		// Start from 1 to skip the program name
 		while (i < ac - 1)
 		{
 			if (ft_strcmp(av[i], av[i + 1]) > 0)

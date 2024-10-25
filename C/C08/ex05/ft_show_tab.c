@@ -39,17 +39,24 @@ void	ft_putnbr(int nb)
 }
 
 void	ft_show_tab(struct s_stock_str *par)
+// Cette fonction affiche les informations d'un tableau 
+// de structures s_stock_str.
+
 {
 	int	index;
 
 	index = 0;
 	while (par[index].str != 0)
+	// Boucle qui parcourt chaque structure tant que str n'est pas NULL.
 	{
 		ft_putstr(par[index].str);
+		// afficher la chaine originale
 		ft_putstr("\n");
 		ft_putnbr(par[index].size);
+		// afficher la longueur de la chiane
 		ft_putstr("\n");
 		ft_putstr(par[index].copy);
+		// affiche la copie
 		ft_putstr("\n");
 		index++;
 	}

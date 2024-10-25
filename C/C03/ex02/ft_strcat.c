@@ -6,11 +6,14 @@
 /*   By: jilin <jilin@student.s19.be>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/10 10:00:52 by jilin             #+#    #+#             */
-/*   Updated: 2024/07/11 15:40:54 by jilin            ###   ########.fr       */
+/*   Updated: 2024/10/25 17:24:11 by jilin            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 char	*ft_strcat(char *dest, char *src)
+// append a copy of the null-terminated string s2 to the end
+// of the null-terminated string s1, then add a terminating `\0'.
+// The string s1 must have sufficient space to hold the result.
 {
 	int	i;
 	int	j;

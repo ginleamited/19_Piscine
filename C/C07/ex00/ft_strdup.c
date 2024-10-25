@@ -6,7 +6,7 @@
 /*   By: jilin <jilin@student.s19.be>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/16 17:55:54 by jilin             #+#    #+#             */
-/*   Updated: 2024/07/23 15:00:19 by jilin            ###   ########.fr       */
+/*   Updated: 2024/10/25 17:27:10 by jilin            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,10 +44,13 @@ char	*ft_strdup(char *src)
 	char	*dup;
 
 	i = ft_strlen(src);
+	// determiner longueur max de source
 	dup = (malloc(sizeof(char) * (i + 1)));
+	//  alloc space in dup using the function malloc
 	if (dup == NULL)
 		return (NULL);
 	ft_strcpy(dup, src);
+	// strcpy src dans dup
 	return (dup);
 }
 /*
