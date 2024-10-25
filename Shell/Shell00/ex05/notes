@@ -1,0 +1,12 @@
+git clone
+
+git add .
+git commit -m 'save1'
+git push
+//add git log -n 5
+git status
+git add .
+git status
+git commit -m 'modifications'
+git push
+bash git_commit.sh | cat -e

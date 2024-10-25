@@ -1,0 +1,9 @@
+touch testShell00
+touch -t 202406012342 testShell00
+vim testShell00
+//mettre 40 caracteres dans vim
+chmod 455 testShell00
+ls -l
+tar -cf testShell00.tar testShell00
+rm testShell00
+tar -xpf testShell00.tar
