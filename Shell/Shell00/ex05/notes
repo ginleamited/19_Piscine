@@ -3,7 +3,8 @@ git clone
 git add .
 git commit -m 'save1'
 git push
-//add git log -n 5
+touch git_commit.sh
+//add this in the bash file : git log -n 5 | grep '^commit' | cut -d ' ' -f 2
 git status
 git add .
 git status
